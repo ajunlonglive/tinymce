@@ -105,6 +105,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed the `textpattern` plugin's API as part of moving it to core #TINY-8312
 - Removed the `editor.settings` property as it's been replaced by the new Options API #TINY-8236
 - Removed the undocumented `editor.editorCommands.hasCustomCommand` API #TINY-7829
+- Removed the undocumented `mceResetDesignMode` command #TINY-7829
+- Removed the undocumented `mceRepaint` command #TINY-7829
 
 ### Deprecated
 - The dialog button component `primary` property has been deprecated in favour of the new `buttonType` property #TINY-8304
