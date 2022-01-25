@@ -57,6 +57,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved the `print` plugin's functionality to TinyMCE core #TINY-8314
 - Renamed the `getShortEndedElements` Schema API to `getVoidElements` #TINY-8344
 - Changed the default statusbar element path delimiter from `»` to `›` #TINY-8372
+- The `editor.editorCommands.queryCommandSupported` will now return `false` on removed editors #TINY-7829
+- The `editor.editorCommands.queryCommandState` will now return `false` on removed editors #TINY-7829
+- The `editor.editorCommands.queryCommandValue` will now return empty strings on removed editors #TINY-7829
+- The `editor.editorCommands.execCommand` will now return false on removed editors #TINY-7829
+- The `editor.queryCommandSupported` will now return `false` on removed editors #TINY-7829
+- The `editor.queryCommandState` will now return `false` on removed editors #TINY-7829
+- The `editor.queryCommandValue` will now return empty strings on removed editors #TINY-7829
+- The `editor.execCommand` will now return false on removed editors #TINY-7829
 
 ### Fixed
 - The object returned from the `editor.fire()` API was incorrect if the editor had been removed #TINY-8018
@@ -96,6 +104,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed the `tabfocus` plugin #TINY-8315
 - Removed the `textpattern` plugin's API as part of moving it to core #TINY-8312
 - Removed the `editor.settings` property as it's been replaced by the new Options API #TINY-8236
+- Removed the undocumented `editor.editorCommands.hasCustomCommand` API #TINY-7829
 
 ### Deprecated
 - The dialog button component `primary` property has been deprecated in favour of the new `buttonType` property #TINY-8304
