@@ -57,6 +57,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved the `print` plugin's functionality to TinyMCE core #TINY-8314
 - Renamed the `getShortEndedElements` Schema API to `getVoidElements` #TINY-8344
 - Changed the default statusbar element path delimiter from `»` to `›` #TINY-8372
+- The `editor.editorCommands.queryCommandSupported` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.editorCommands.queryCommandState` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.editorCommands.queryCommandValue` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.editorCommands.execCommand` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.queryCommandSupported` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.queryCommandState` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.queryCommandValue` will no longer fallback to the browsers native command #TINY-7829
+- The `editor.execCommand` will no longer fallback to the browsers native command #TINY-7829
 - The `editor.editorCommands.queryCommandSupported` will now return `false` on removed editors #TINY-7829
 - The `editor.editorCommands.queryCommandState` will now return `false` on removed editors #TINY-7829
 - The `editor.editorCommands.queryCommandValue` will now return empty strings on removed editors #TINY-7829
